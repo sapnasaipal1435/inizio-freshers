@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freshers Party 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&family=Kaushan+Script&family=Playfair+Display:ital,wght@0,700;0,800;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- reusable gold graphics -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0b0"/><stop offset=".5" stop-color="#e8b948"/><stop offset="1" stop-color="#a97a22"/>
+    </linearGradient>
+    <symbol id="branch" viewBox="0 0 100 200">
+      <path d="M50 197 C30 140 30 60 56 4" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+      <g fill="url(#gold)">
+        <ellipse cx="36" cy="150" rx="7" ry="17" transform="rotate(-45 36 150)"/>
+        <ellipse cx="30" cy="112" rx="7" ry="17" transform="rotate(-45 30 112)"/>
+        <ellipse cx="34" cy="75" rx="7" ry="16" transform="rotate(-40 34 75)"/>
+        <ellipse cx="45" cy="40" rx="6" ry="14" transform="rotate(-30 45 40)"/>
+        <ellipse cx="58" cy="165" rx="7" ry="17" transform="rotate(45 58 165)"/>
+        <ellipse cx="52" cy="128" rx="7" ry="17" transform="rotate(45 52 128)"/>
+        <ellipse cx="50" cy="92" rx="7" ry="16" transform="rotate(40 50 92)"/>
+        <ellipse cx="57" cy="58" rx="6" ry="14" transform="rotate(30 57 58)"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="bg-deco" aria-hidden="true">
+    <span class="stroke s1"></span><span class="stroke s2"></span>
+    <span class="stroke s3"></span><span class="stroke s4"></span>
+    <i class="sp a1">✦</i><i class="sp a2">✦</i><i class="sp a3">✦</i><i class="sp a4">✦</i><i class="sp a5">✦</i>
+</div>
+
+<header class="hero">
+    <svg class="cap-art" viewBox="0 0 120 90" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linejoin="round">
+        <path d="M60 10 L112 32 L60 54 L8 32 Z"/><path d="M28 44 V66 C45 80 75 80 92 66 V44"/><path d="M112 32 V62"/><circle cx="112" cy="68" r="4"/>
+    </svg>
+    <svg class="plane-art" viewBox="0 0 120 90" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linejoin="round">
+        <path d="M6 40 L112 8 L84 80 L56 56 Z"/><path d="M56 56 L112 8"/><path d="M56 56 V80 L68 66"/>
+    </svg>
+
+    <div class="crown">♛</div>
+    <h1 class="party-name">Inizio</h1>
+    <p class="beginning">THE BEGINNING</p>
+    <div class="swoosh"></div>
+    <p class="welcome"><span>Welcome to</span></p>
+    <h2 class="fresh">Freshers Party</h2>
+    <p class="college">Vikash Institute of Technology</p>
+    <p class="year">✦ 2026 ✦</p>
+    <p class="tagline">Create your special Fresher memory</p>
+</header>
+
+<main class="main-section">
+
+    <section class="form-box">
+        <h2><span class="spark">✦</span> Create Your Fresher Card</h2>
+        <p>Enter your name and upload your selfie</p>
+
+        <label for="nameInput">👤 Your Name</label>
+        <input type="text" id="nameInput" placeholder="Enter your full name">
+
+        <label for="photoInput">🖼 Upload Your Selfie</label>
+        <input type="file" id="photoInput" accept="image/*">
+
+        <button id="createBtn">✦ CREATE MY FRESHER CARD</button>
+        <div id="status"></div>
+    </section>
+
+    <section class="card-side">
+        <div class="card-tilt">
+            <div class="fresher-card" id="fresherCard">
+                <div class="card-cap">🎓</div>
+                <div class="card-party">Inizio</div>
+                <div class="card-begin">THE BEGINNING</div>
+                <div class="card-sub">FRESHERS PARTY 2026</div>
+
+                <div class="photo-area">
+                    <div class="photo-circle">
+                        <img id="studentPhoto" alt="">
+                        <span id="photoPlaceholder">Your photo</span>
+                    </div>
+                </div>
+
+                <div class="student-name" id="cardName">Your Name</div>
+                <div class="card-line">★</div>
+                <div class="college-name">VIKASH INSTITUTE OF TECHNOLOGY</div>
+                <div class="card-footer">★ FRESHERS PARTY 2026 ★</div>
+            </div>
+        </div>
+        <button class="download-btn" id="downloadBtn">⬇ DOWNLOAD MY CARD</button>
+    </section>
+
+</main>
+
+<footer class="thank-you">
+    <svg class="leaf l" viewBox="0 0 100 200"><use href="#branch"/></svg>
+    <svg class="leaf r" viewBox="0 0 100 200"><use href="#branch"/></svg>
+    <h2>Thank You For Coming</h2>
+    <p>Attend Our Freshers Party 2026</p>
+    <div class="heart">♥</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
